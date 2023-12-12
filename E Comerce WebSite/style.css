@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 221, 166);
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header h1{
+    margin: 0;
+}
+
+.mainmanu{
+    align-items: right;
+}
+
+.mainmanu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmanu ul li{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+.mainmanu ul li a:hover{
+    transition: 0.2s;
+    color: #ff7676;
+}
+
+.mainmanu ul li .active{
+    color: #ff7676;
+}
+
+
+.hero {
+    background-color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #666;
+}
+
+.slideshow {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Animacija slajdova */
+@keyframes slideshow-animation {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 1;
+    }
+    53.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slideshow-animation {
+    animation: slideshow-animation 9s infinite;
+}
+
+/* Stilovi sekcije features */
+.features {
+    background-color: transparent;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.feature {
+    width: 33.33%;
+    text-align: center;
+    margin: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.feature img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+.loginsignup {
+    background-color: #fff;
+    padding: 60px;
+}
+
+.login-form {
+    max-width: 30%;
+    height: 400px;
+    margin:  auto;
+    padding: 20px;
+    background: rgb(255, 221, 166);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(151, 151, 151);
+    box-shadow: 0px 13px 24px -2px rgba(0,0,0,0.27);
+    transition: 0.3s;
+}
+
+.login-form:hover {
+    box-shadow: 0px 13px 24px -2px rgba(0,0,0,0.47);
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+    margin: 20px 0 0 0 ;
+    width: 150px;
+    padding: 10px;
+    background: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.login-form .signup-text {
+    margin: 20px 0 0 0;
+}
+
+.login-form .signup-text a {
+    /* margin-top: 10px; */
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ff7676;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.login-form .signup-text a:hover {
+    background-color: #fb6060;
+}
+
+/* Stilovi podnožja */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    /* bottom: 0; */
+    width: 98vw;
+}
+
+.footer a{
+    color: #fff;
+}
+
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.text{
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+}
+
+.h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Stilizacija za polje za pretragu */
+#search-input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Stilizacija za dugme za pretragu */
+#search-form button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Boja pozadine */
+    color: #fff; /* Boja teksta */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Stilizacija za rezultate pretrage (primer) */
+#search-results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.text p{
+    font-size: 20px;
+    margin: 10px 30px 10px 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+@media (min-width: 400px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.product {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.product img:hover {
+    scale: 108%;
+}
+
+.product h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+
+
+.about{
+    text-align: center;
+}
+
+.about h1{
+    font-size: 100px;
+    margin: 100px 0 100px 0;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px 100px 20px 100px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.address p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.contact-container h2{
+    margin: 50px 0 20px 0;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 80vh;
+}
+
+.contact-info1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.contact-item {
+    flex-basis: 30%;
+}
+
+.contact-form {
+    margin: 50px 0 50px 0;
+    background-color: #939393;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-form h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    /* margin-bottom: 5px; */
+}
+
+input::placeholder,
+textarea::placeholder{
+    padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 0px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#search-form{
+    text-align: center;
+}
+
+.pages{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.pages p{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1);
+    display: inline;
+    border-radius: 20px;
+}
+
+.pages a,
+.pages span{
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.pages .activepage{
+    font-size: 25px !important;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.product-details{
+    display: flex;
+}
+
+.product-images{
+    display: flex;
+    padding: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image img {
+    width: 500px; /* Prilagodite širinu velike slike */
+    height: auto;
+}
+
+.thumbnail-images {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px; /* Razmak između malih slika */
+}
+
+.thumbnail {
+    width: 92px; /* Prilagodite širinu malih slika */
+    height: auto;
+    cursor: pointer;
+}
+
+.product-info{
+    padding: 20px;
+}
+
+
+.product-info h1{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.product-info span{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.size-selection{
+    display: flex;
+    padding: 10px;
+}
+
+.product-info #size{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.product-info i{
+    font-size: 30px;
+    /* color: #000; */
+}
+
+.product-info p{
+    font-size: 20px;
+}
+
+.product-info .buttons{
+    padding: 5px;
+}
+
+.product-info .buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.product-info .buttons button i{
+    padding: 5px;
+    
+}
+
+.product-info .buttons .fa-cart-plus {
+    color: rgb(0, 0, 0);
+}
+
+.product-info .buttons .fa-heart {
+    color: rgb(255, 255, 255);
+}
+
+.product-info .product-description{
+    padding: 10px;
+}
+
+.product-info .add-review{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.product-info .add-review h4{
+    font-size: 20px;
+}
+
+.product-info .add-review select{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.product-info .add-review label{
+    padding-top: 10px;
+}
+
+.product-reviews {
+    padding: 30px;
+}
+
+.product-reviews .reviews h3{
+    font-size: 25px;
+}
+
+.product-reviews .reviews ul li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

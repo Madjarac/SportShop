@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>SpotrShop</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html"><h1>SpotrShop</h1></a>
+        <div class="mainmanu">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a class="active" href="shop.html">Proizvodi</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="product-details">
+            <div class="product-images">
+                <div class="image-gallery">
+                    <div class="main-image">
+                        <img src="slike/product1.jpeg" alt="Velika slika">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img class="thumbnail" src="slike/product1.jpeg" alt="Mala slika 0">
+                        <img class="thumbnail" src="slike/product2.jpg" alt="Mala slika 1">
+                        <img class="thumbnail" src="slike/product3.jpg" alt="Mala slika 2">
+                        <img class="thumbnail" src="slike/product4.jpeg" alt="Mala slika 3">
+                        <img class="thumbnail" src="slike/product4.jpeg" alt="Mala slika 4">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>SKECHERS Ž</h1>
+                <p><span>$49.99</span></p>
+                <div class="size-selection">
+                    <label for="size"></label>
+                    <select id="size">
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <button id="add-to-cart"><i class="fas fa-cart-plus"></i></button>
+                    <button id="add-to-favorites"><i class="fas fa-heart"></i></button>
+                </div>
+
+                <div class="product-description">
+                    <p>-Aktivni avanturista-<br> Namenjene aktivnim avanturistima. Izdržljive, 
+                        lagane i pružaju podršku i udobnost tokom avantura.
+                    </p>
+                </div>
+                <div class="add-review">
+                    <h4>Ostavite recenziju</h4>
+                    <form id="review-form">
+                        <div>
+                            <label for="review-name">Ime:</label>
+                            <input type="text" id="review-name" required>
+                        </div>
+                        <div>
+                            <label for="review-rating">Ocena:</label>
+                            <select id="review-rating" required>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="review-comment">Komentar:</label>
+                            <textarea id="review-comment" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Dodaj recenziju</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="product-reviews">
+            <div class="reviews">
+                <h3>Recenzije proizvoda</h3>
+                <ul id="reviews-list">
+                    <!-- Ovde će se prikazivati recenzije -->
+                </ul>
+            </div>
+
+            
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="contact-info">
+            <h4>Kontakt</h4>
+            <address>Adresa: Ulica Cara Dušana 23, Beograd, Srbija</address>
+            <p>Telefon: 123-456-789</p>
+            <p>Email: <a href="mailto:sportshop@gmail.com">sportshop@gmail.com</a></p>
+        </div>
+        <div class="social-media">
+            <h4>Pratite nas</h4>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 SportShop. Sva prava zadržana.</p>
+        </div>
+    </div>
+
+
+
+    <script src="java.js"></script>
+
+</body>
+</html>
